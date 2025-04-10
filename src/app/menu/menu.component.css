@@ -1,0 +1,75 @@
+.cafetito-container {
+    display: flex;
+    
+  }
+  
+  .side-menu {
+    width: 250px;
+    background-color: #0c3b62;
+    min-height: 100vh; /* Esto asegura que el menú ocupe toda la altura */
+    position: fixed; /* Esto mantiene el menú fijo incluso al hacer scroll */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1); 
+  }
+  
+  .logo  {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .logo h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+  .menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .menu-items li {
+    width: 100%;
+  }
+
+  .menu-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-items li a:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .main-content {
+    flex: 1;
+    background-color: #f9f9f9;
+    margin-left: 0px; /* Esto compensa el ancho del menú fijo */
+    height:93vh;  
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita el desplazamiento interno */
+  }
+  .content {
+    text-align: center;
+    
+
+  }
+  
+  .content h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    color: #666;
+    font-size: 1.1rem;
+  }
